@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "T9Yjjb2OvQwRL9cospSLFsELt5GW7JkhMfbSd/MT16m1u75MMOk4OwothBM3tu+cY0WWh1v8oyVfp05l6JpNvw==",
+  "success": true,
+  "projectFilePath": "D:\\Job Task\\m2sys.WebAPI\\m2sys.Membership\\m2sys.Membership.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sabbir Ahmed\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Sabbir Ahmed\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\bin\Debug\netstandard2.0\m2sys.Infrastructute.deps.json
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\bin\Debug\netstandard2.0\m2sys.Infrastructute.dll
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\obj\Debug\netstandard2.0\m2sys.Infrastructute.AssemblyInfoInputs.cache
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\obj\Debug\netstandard2.0\m2sys.Infrastructute.AssemblyInfo.cs
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\obj\Debug\netstandard2.0\m2sys.Infrastructute.csprojAssemblyReference.cache
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\bin\Debug\netstandard2.0\m2sys.Infrastructute.pdb
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\bin\Debug\netstandard2.0\m2sys.core.dll
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\bin\Debug\netstandard2.0\m2sys.core.pdb
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\obj\Debug\netstandard2.0\m2sys.Infrastructute.csproj.CoreCompileInputs.cache
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\obj\Debug\netstandard2.0\m2sys.Infrastructute.csproj.CopyComplete
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\obj\Debug\netstandard2.0\m2sys.Infrastructute.dll
+D:\Job Task\m2sys.WebAPI\m2sys.Infrastructute\obj\Debug\netstandard2.0\m2sys.Infrastructute.pdb

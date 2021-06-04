@@ -1,0 +1,9 @@
+D:\Job Task\m2sys.WebAPI\m2sys.core\bin\Debug\netstandard2.0\m2sys.core.deps.json
+D:\Job Task\m2sys.WebAPI\m2sys.core\bin\Debug\netstandard2.0\m2sys.core.dll
+D:\Job Task\m2sys.WebAPI\m2sys.core\obj\Debug\netstandard2.0\m2sys.core.AssemblyInfoInputs.cache
+D:\Job Task\m2sys.WebAPI\m2sys.core\obj\Debug\netstandard2.0\m2sys.core.AssemblyInfo.cs
+D:\Job Task\m2sys.WebAPI\m2sys.core\obj\Debug\netstandard2.0\m2sys.core.csprojAssemblyReference.cache
+D:\Job Task\m2sys.WebAPI\m2sys.core\bin\Debug\netstandard2.0\m2sys.core.pdb
+D:\Job Task\m2sys.WebAPI\m2sys.core\obj\Debug\netstandard2.0\m2sys.core.csproj.CoreCompileInputs.cache
+D:\Job Task\m2sys.WebAPI\m2sys.core\obj\Debug\netstandard2.0\m2sys.core.dll
+D:\Job Task\m2sys.WebAPI\m2sys.core\obj\Debug\netstandard2.0\m2sys.core.pdb
