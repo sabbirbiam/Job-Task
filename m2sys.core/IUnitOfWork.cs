@@ -8,5 +8,6 @@ namespace m2sys.core
         int SaveChanges();
 
         Task<int> SaveChangesAsync();
+
     }
 }

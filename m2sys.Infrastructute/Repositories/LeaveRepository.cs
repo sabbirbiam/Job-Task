@@ -10,11 +10,11 @@ namespace m2sys.Infrastructute.Repositories
 {
     public class LeaveRepository: Repository<Leave, Guid, ApiContext>, ILeaveRepository
     {
-        private readonly ILeaveRepository _leaveRepository;
-        public LeaveRepository(ApiContext apiContext, ILeaveRepository leaveRepository)
+   
+        public LeaveRepository(ApiContext apiContext)
          : base(apiContext)
         {
-            _leaveRepository = leaveRepository;
+            // _leaveRepository = leaveRepository;
         }
 
         public IList<Leave> GetAllLevesByPagination()
