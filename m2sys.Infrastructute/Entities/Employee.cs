@@ -14,7 +14,7 @@ namespace m2sys.Infrastructute.Entities
         public DateTime DOB { get; set; }
         public DateTime Designation { get; set; }
         public int Department { get; set; }
-        IList<Leave> leaves { get; set; }
+        public IList<Leave> Leaves { get; set; }
 
     }
 }

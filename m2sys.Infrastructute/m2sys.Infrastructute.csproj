@@ -13,10 +13,4 @@
     <ProjectReference Include="..\m2sys.core\m2sys.core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="UnitOfWorks\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>

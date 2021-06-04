@@ -19,6 +19,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using m2sys.Infrastructute;
+using m2sys.Infrastructute.Contexts;
 
 namespace m2sys.WebAPI
 {
@@ -50,8 +52,7 @@ namespace m2sys.WebAPI
             var connectionString = Configuration.GetConnectionString(connectionStringName);
             var migrationAssemblyName = typeof(Startup).Assembly.FullName;
 
-            //builder.RegisterModule(new MembershipModule(connectionString, migrationAssemblyName));
-            //builder.RegisterModule(new InfrastructureModule(connectionString, migrationAssemblyName));
+            builder.RegisterModule(new FoundationModule(connectionString, migrationAssemblyName));
         }
 
         public void ConfigureServices(IServiceCollection services)
@@ -61,11 +62,9 @@ namespace m2sys.WebAPI
             var migrationAssemblyName = typeof(Startup).Assembly.FullName;
 
 
-            //services.AddDbContext<ApiContext>(options =>
-            //           options.UseSqlServer(connectionString, b => b.MigrationsAssembly(migrationAssemblyName)));
+            services.AddDbContext<ApiContext>(options =>
+                       options.UseSqlServer(connectionString, b => b.MigrationsAssembly(migrationAssemblyName)));
 
-            //services.AddDbContext<ApplicationDbContext>(options =>
-            //           options.UseSqlServer(connectionString, b => b.MigrationsAssembly(migrationAssemblyName)));
             services.AddCors();
             services.AddMvc();
             services.AddControllers();

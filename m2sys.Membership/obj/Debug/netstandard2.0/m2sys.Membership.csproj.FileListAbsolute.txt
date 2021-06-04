@@ -1,0 +1,9 @@
+D:\Job Task\m2sys.WebAPI\m2sys.Membership\bin\Debug\netstandard2.0\m2sys.Membership.deps.json
+D:\Job Task\m2sys.WebAPI\m2sys.Membership\bin\Debug\netstandard2.0\m2sys.Membership.dll
+D:\Job Task\m2sys.WebAPI\m2sys.Membership\bin\Debug\netstandard2.0\m2sys.Membership.pdb
+D:\Job Task\m2sys.WebAPI\m2sys.Membership\obj\Debug\netstandard2.0\m2sys.Membership.csprojAssemblyReference.cache
+D:\Job Task\m2sys.WebAPI\m2sys.Membership\obj\Debug\netstandard2.0\m2sys.Membership.AssemblyInfoInputs.cache
+D:\Job Task\m2sys.WebAPI\m2sys.Membership\obj\Debug\netstandard2.0\m2sys.Membership.AssemblyInfo.cs
+D:\Job Task\m2sys.WebAPI\m2sys.Membership\obj\Debug\netstandard2.0\m2sys.Membership.csproj.CoreCompileInputs.cache
+D:\Job Task\m2sys.WebAPI\m2sys.Membership\obj\Debug\netstandard2.0\m2sys.Membership.dll
+D:\Job Task\m2sys.WebAPI\m2sys.Membership\obj\Debug\netstandard2.0\m2sys.Membership.pdb

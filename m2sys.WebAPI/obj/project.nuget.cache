@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MpgN5GOJha6ESK+19T8bj4KSNDn6ayqslUQUTofFWuZ4v+o7KWNvv37dCJNs8ZBZ0QF/mBtNQBxlYGUdIfH2kQ==",
+  "dgSpecHash": "xIZtBmNPOXpf1F+ngCDywRKBXWWUysdSHpWbNEM3CVRgx+eozAym4gTm8UgZk8FvZMPU6gzbwLq6N9rdVeIx5A==",
   "success": true,
   "projectFilePath": "D:\\Job Task\\m2sys.WebAPI\\m2sys.WebAPI\\m2sys.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -140,6 +140,7 @@
     "C:\\Users\\Sabbir Ahmed\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\Sabbir Ahmed\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Sabbir Ahmed\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\Sabbir Ahmed\\.nuget\\packages\\system.linq.dynamic.core\\1.2.7\\system.linq.dynamic.core.1.2.7.nupkg.sha512",
     "C:\\Users\\Sabbir Ahmed\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Sabbir Ahmed\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Sabbir Ahmed\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
