@@ -13,6 +13,7 @@ namespace m2sys.Infrastructute.Services.Interface
         Task CreateEmployee(EmployeeDTO employee);
         EmployeeDTO GetEmployeeById(Guid Id);
         bool DeleteEmployeeRecord(Guid Id);
+        Task UpdateEmployee(EmployeeDTO employee);
 
     }
 }

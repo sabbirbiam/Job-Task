@@ -137,6 +137,37 @@ namespace m2sys.WebAPI.Controllers
             }
         }
 
+        [HttpPut("update-employee")]
+        public async Task<IActionResult> UpdateEmployee(EmployeeDTO employee)
+        {
+            try
+            {
+                await _employeeService.UpdateEmployee(employee);
 
-    }
+                var result = new ResultModel<EmployeeDTO>
+                {
+                    Data = new EmployeeDTO(),
+                    Message = "Update successful",
+                    Success = true
+                };
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+
+
+                var result = new ResultModel<EmployeeDTO>
+                {
+                    Data = new EmployeeDTO(),
+                    Message = "Error Occurred",
+                    Success = false
+                };
+
+                return BadRequest(result);
+            }
+        }
+
+
+        }
 }

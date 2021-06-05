@@ -96,6 +96,22 @@ namespace m2sys.Infrastructute.Services
             return true;
         }
 
+        public async Task UpdateEmployee(EmployeeDTO employee)
+        {
+            var employeeUpdate = _apiUnitOfWork.EmployeeRepository.GetById(employee.Id);
+            if (employeeUpdate == null)
+                throw new Exception($"No Employee has found for update with Id: {employee.Id}");
 
+
+            employeeUpdate.FirstName = employee.FirstName;
+            employeeUpdate.MiddleName = employee.MiddleName;
+            employeeUpdate.LastName = employee.LastName;
+            employeeUpdate.DOB = employee.DOB;
+            employeeUpdate.Designation = employee.Designation;
+            employeeUpdate.Department = employee.Department;
+
+            _apiUnitOfWork.EmployeeRepository.Edit(employeeUpdate);
+            await _apiUnitOfWork.SaveChangesAsync();
+        }
     }
 }
