@@ -34,6 +34,7 @@ namespace m2sys.Infrastructute.Services
                 MiddleName = x.MiddleName,
                 LastName = x.LastName,
                 DOB = x.DOB,
+                JoiningDate = x.JoiningDate,
                 Department = x.Department, 
                 Designation = x.Designation,
             });
@@ -51,9 +52,10 @@ namespace m2sys.Infrastructute.Services
                 FirstName = employee.FirstName,
                 MiddleName = employee.MiddleName,
                 LastName = employee.LastName,
-                Designation = new DateTime().Date,
+                Designation = employee.Designation,
                 Department = employee.Department,
-                DOB = new DateTime().Date,
+                JoiningDate = employee.JoiningDate,
+                DOB = employee.DOB,
             };
 
             _apiUnitOfWork.EmployeeRepository.Add(newEmployee);
@@ -109,6 +111,7 @@ namespace m2sys.Infrastructute.Services
             employeeUpdate.DOB = employee.DOB;
             employeeUpdate.Designation = employee.Designation;
             employeeUpdate.Department = employee.Department;
+            employeeUpdate.JoiningDate = employee.JoiningDate;
 
             _apiUnitOfWork.EmployeeRepository.Edit(employeeUpdate);
             await _apiUnitOfWork.SaveChangesAsync();

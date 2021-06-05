@@ -12,7 +12,8 @@ namespace m2sys.Infrastructute.Entities
         public string MiddleName { get; set; }
         public string LastName { get; set; }
         public DateTime DOB { get; set; }
-        public DateTime Designation { get; set; }
+        public DateTime JoiningDate { get; set; }
+        public string Designation { get; set; }
         public int Department { get; set; }
         public IList<Leave> Leaves { get; set; }
 

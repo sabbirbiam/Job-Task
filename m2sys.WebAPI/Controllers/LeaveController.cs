@@ -20,7 +20,7 @@ namespace m2sys.WebAPI.Controllers
             _leaveService = leaveService;
         }
 
-        [HttpGet]
+        [HttpGet("get-all-leaves")]
         public IActionResult Get()
         {
             try
@@ -106,7 +106,7 @@ namespace m2sys.WebAPI.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("delete-leave-by-id/{id}")]
         public IActionResult Delete(Guid id)
         {
             try

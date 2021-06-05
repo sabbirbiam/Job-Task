@@ -21,7 +21,7 @@ namespace m2sys.WebAPI.Controllers
             _employeeService = employeeService;
         }
 
-        [HttpGet]
+        [HttpGet("get-all-employee")]
         public IActionResult Get ()
         {
             try
@@ -49,7 +49,7 @@ namespace m2sys.WebAPI.Controllers
 
         }
 
-        [HttpPost("CreateEmp")] //Tested
+        [HttpPost("create-employee")]
         public async Task<IActionResult> CreateProject(EmployeeDTO employee)
         {
             try
@@ -108,7 +108,7 @@ namespace m2sys.WebAPI.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("delete-employee-by-id/{id}")]
         public IActionResult Delete(Guid id)
         {
             try

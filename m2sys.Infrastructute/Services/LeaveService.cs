@@ -46,11 +46,11 @@ namespace m2sys.Infrastructute.Services
           
             var newLeave = new Leave
             {
-                EmployeeId = new Guid("fabf72ac-8fc2-429e-3a28-08d9279b7050"),
+                EmployeeId = leave.EmployeeId,
                 LeaveType = leave.LeaveType,
                 Description = leave.Description,
-                StrarDate = new DateTime().Date,
-                EndDate = new DateTime().Date, 
+                StrarDate = leave.StrarDate,
+                EndDate = leave.EndDate,
             };
 
             _apiUnitOfWork.LeaveRepository.Add(newLeave);
