@@ -10,6 +10,7 @@ namespace m2sys.Infrastructute.Services.Interface
     public interface IEmployeeService
     {
         IEnumerable<EmployeeDTO> GetEmployees();
+        IEnumerable<EmployeeDTO> GetEmployeesByPagination(int index, int pageSize);
         Task CreateEmployee(EmployeeDTO employee);
         EmployeeDTO GetEmployeeById(Guid Id);
         bool DeleteEmployeeRecord(Guid Id);

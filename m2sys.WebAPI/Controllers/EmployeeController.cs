@@ -22,8 +22,10 @@ namespace m2sys.WebAPI.Controllers
         }
 
         [HttpGet("get-all-employee")]
-        public IActionResult Get ()
+  
+        public IActionResult Get()
         {
+            // return Ok(index);
             try
             {
                 var result = new ResultModel<IEnumerable<EmployeeDTO>>
@@ -36,6 +38,35 @@ namespace m2sys.WebAPI.Controllers
                 return Ok(result);
             }
             catch(Exception ex)
+            {
+                var result = new ResultModel<IEnumerable<EmployeeDTO>>
+                {
+                    Data = _employeeService.GetEmployees(),
+                    Message = "Error Occurred",
+                    Success = false
+                };
+
+                return Ok(result);
+            }
+
+        }
+
+        [HttpGet("get-all-employee-pagination/{pageIndex}/{pageSize}")]
+        public IActionResult GetPagination(int pageIndex, int pageSize)
+        {
+            // return Ok(index);
+            try
+            {
+                var result = new ResultModel<IEnumerable<EmployeeDTO>>
+                {
+                    Data = _employeeService.GetEmployeesByPagination(pageIndex, pageSize),
+                    Message = string.Empty,
+                    Success = true
+                };
+
+                return Ok(result);
+            }
+            catch (Exception ex)
             {
                 var result = new ResultModel<IEnumerable<EmployeeDTO>>
                 {

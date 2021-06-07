@@ -13,6 +13,7 @@ namespace m2sys.Infrastructute.Services.Interface
         LeaveDTO GetLeaveById(Guid Id);
         bool DeleteLeaveRecord(Guid Id);
         Task UpdateLeave(LeaveDTO leave);
+        IList<LeaveDTO> GetLeavesJoin(int pageIndex, int pageSize);
         void getAll();
     }
 }

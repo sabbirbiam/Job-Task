@@ -1,5 +1,6 @@
 ﻿using m2sys.core;
 using m2sys.Infrastructute.Contexts;
+using m2sys.Infrastructute.DTO;
 using m2sys.Infrastructute.Entities;
 using System;
 using System.Collections.Generic;
@@ -9,5 +10,6 @@ namespace m2sys.Infrastructute.Repositories.Interface
 {
     public interface IEmployeeRepository : IRepository<Employee, Guid, ApiContext>
     {
+        IList<EmployeeDTO> GetEmployeeByPagination();
     }
 }

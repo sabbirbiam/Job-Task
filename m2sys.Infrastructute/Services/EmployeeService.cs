@@ -18,6 +18,31 @@ namespace m2sys.Infrastructute.Services
             _apiUnitOfWork = apiUnitOfWork;
         }
 
+        public IEnumerable<EmployeeDTO> GetEmployeesByPagination(int index, int pageSize)
+        {
+            var data = _apiUnitOfWork.EmployeeRepository.GetByPigination(index, pageSize);
+
+            if (data == null)
+            {
+                // _loggingService.AddLoggingMessage("No data found in Screen Capture Table.");
+                return null;
+            }
+
+            var result = data.Select(x => new EmployeeDTO
+            {
+                Id = x.Id,
+                FirstName = x.FirstName,
+                MiddleName = x.MiddleName,
+                LastName = x.LastName,
+                DOB = x.DOB,
+                JoiningDate = x.JoiningDate,
+                Department = x.Department,
+                Designation = x.Designation,
+            });
+
+            return result;
+        }
+
         public IEnumerable <EmployeeDTO> GetEmployees()
         {
             var data =  _apiUnitOfWork.EmployeeRepository.GetAll();
@@ -116,5 +141,6 @@ namespace m2sys.Infrastructute.Services
             _apiUnitOfWork.EmployeeRepository.Edit(employeeUpdate);
             await _apiUnitOfWork.SaveChangesAsync();
         }
+
     }
 }

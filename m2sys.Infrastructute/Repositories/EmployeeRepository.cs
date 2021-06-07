@@ -1,5 +1,6 @@
 ﻿using m2sys.core;
 using m2sys.Infrastructute.Contexts;
+using m2sys.Infrastructute.DTO;
 using m2sys.Infrastructute.Entities;
 using m2sys.Infrastructute.Repositories.Interface;
 using System;
@@ -17,6 +18,11 @@ namespace m2sys.Infrastructute.Repositories
         }
 
         public IList<Employee> GetAllEmployees()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IList<EmployeeDTO> GetEmployeeByPagination()
         {
             throw new NotImplementedException();
         }

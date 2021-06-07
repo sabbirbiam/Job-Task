@@ -1,4 +1,5 @@
-﻿using m2sys.Infrastructute.DTO;
+﻿using m2sys.Infrastructute.Contexts;
+using m2sys.Infrastructute.DTO;
 using m2sys.Infrastructute.Entities;
 using m2sys.Infrastructute.Services.Interface;
 using m2sys.Infrastructute.UnitOfWorks.Interface;
@@ -10,13 +11,16 @@ using System.Threading.Tasks;
 
 namespace m2sys.Infrastructute.Services
 {
+    
     public class LeaveService: ILeaveService
     {
         private readonly IApiUnitOfWork _apiUnitOfWork;
+        private ApiContext _apiContext;
 
-        public LeaveService(IApiUnitOfWork apiOfWork)
+        public LeaveService(IApiUnitOfWork apiOfWork, ApiContext apiContext)
         {
             _apiUnitOfWork = apiOfWork;
+            _apiContext = apiContext;
         }
 
         public IEnumerable<LeaveDTO> GetLeaves()
@@ -116,6 +120,26 @@ namespace m2sys.Infrastructute.Services
         {
             //_apiUnitOfWork.LeaveRepository.
             throw new NotImplementedException();
+        }
+
+        public IList<LeaveDTO> GetLeavesJoin(int pageIndex, int pageSize)
+        {
+            var result = (from le in _apiContext.Leaves
+                          join em in _apiContext.Employees on le.EmployeeId equals em.Id
+                          select new LeaveDTO
+                          {
+                              Id = le.Id,
+                              EmployeeId = em.Id,
+                              Description = le.Description,
+                              LeaveType = le.LeaveType,
+                              StrarDate = le.StrarDate,
+                              EndDate = le.EndDate,
+                              EmpName = em.FirstName
+                          }).Skip((pageIndex - 1) * pageSize).Take(pageSize);
+
+            return result.ToList();
+
+            //throw new NotImplementedException();
         }
     }
 

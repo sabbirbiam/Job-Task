@@ -20,6 +20,34 @@ namespace m2sys.WebAPI.Controllers
             _leaveService = leaveService;
         }
 
+        [HttpGet("get-all-leave-pagination/{pageIndex}/{pageSize}")]
+        public IActionResult GetLeaveByPagination(int pageIndex, int pageSize)
+        {
+            try
+            {
+                var result = new ResultModel<IEnumerable<LeaveDTO>>
+                {
+                    Data = _leaveService.GetLeavesJoin(pageIndex, pageSize),
+                    Message = string.Empty,
+                    Success = true
+                };
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                var result = new ResultModel<IEnumerable<LeaveDTO>>
+                {
+                    Data = _leaveService.GetLeaves(),
+                    Message = "Error Occurred",
+                    Success = false
+                };
+
+                return Ok(result);
+            }
+
+        }
+
         [HttpGet("get-all-leaves")]
         public IActionResult Get()
         {

@@ -96,10 +96,17 @@ namespace m2sys.core
             return query.ToList();
         }
 
+        public virtual IList<TEntity> GetByPigination (int pageIndex = 1, int pageSize = 5)
+        {
+            IQueryable<TEntity> query = _dbSet;
+            return query.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+        }
+
         public virtual TEntity GetById(TKey id)
         {
             return _dbSet.Find(id);
         }
+
 
         public virtual (IList<TEntity> data, int total, int totalDisplay) Get(
             Expression<Func<TEntity, bool>> filter = null,

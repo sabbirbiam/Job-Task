@@ -18,7 +18,9 @@ namespace m2sys.core
         int GetCount(Expression<Func<TEntity, bool>> filter = null);
         IList<TEntity> Get(Expression<Func<TEntity, bool>> filter);
         IList<TEntity> GetAll();
+        IList<TEntity> GetByPigination(int pageIndex = 1, int pageSize = 5);
         TEntity GetById(TKey id);
+
         (IList<TEntity> data, int total, int totalDisplay) Get(
             Expression<Func<TEntity, bool>> filter = null,
             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,

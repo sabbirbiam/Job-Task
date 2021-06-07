@@ -12,5 +12,6 @@ namespace m2sys.Infrastructute.DTO
         public string Description { get; set; }
         public DateTime StrarDate { get; set; }
         public DateTime EndDate { get; set; }
+        public string EmpName { get; set; }
     }
 }
